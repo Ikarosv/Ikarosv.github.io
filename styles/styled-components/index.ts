@@ -1,7 +1,9 @@
 import Title from './Title';
+import Text from './Text';
 
 const DEFAULT_EXPORT = {
-  Title
+  Title,
+  Text,
 }
 
 export default DEFAULT_EXPORT;
