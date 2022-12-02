@@ -17,9 +17,11 @@ function headFunction(props: Props) {
 
 const titleWeightFunction = (props: Props) => props.headNumber < 4 ? '800' : props.headNumber === 4 ? '700' : '400';
 
-export const Title = styled.span.attrs({
+const Title = styled.span.attrs({
   role: 'heading',
 })`
   font-size: ${headFunction};
   font-weight: ${titleWeightFunction};
 `;
+
+export default Title;
