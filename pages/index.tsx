@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Text from '../styles/styled-components/Text'
+import Button from '../styles/styled-components/Button'
 
 export default function Home() {
   return (
@@ -9,7 +9,7 @@ export default function Home() {
         <meta name="description" content="Portfólio de Ikaro Vieira" />
       </Head>
       {/* <h1>Ikaro</h1> */}
-      <Text color='dark-accent'>Texto</Text>
+      <Button secondary>Button</Button>
     </div>
   )
 }
