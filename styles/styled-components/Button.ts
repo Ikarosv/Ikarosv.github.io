@@ -12,27 +12,23 @@ const Button = styled('button', {
     },
     color: {
       ...TextColors,
-    },
-    bgColor: {
-      primary: {
-        backgroundColor: '$PURPLE',
-      }
     }
   },
   defaultVariants: {
     secondary: false,
-    color: '$light',
-    bgColor: 'primary',
+    color: '$light'
   },
   borderRadius: '6px',
-  padding: '18px',
-  minWidth: '170px',
+  padding: '17px',
+  maxWidth: '170px',
+  width: 'fit-content',
   cursor: 'pointer',
   textTransform: 'uppercase',
   fontWeight: '900',
   fontSize: '14px',
   border: 'none',
-  color: '$LIGHT'
+  color: '$LIGHT',
+  backgroundColor: '$PURPLE',
 });
 
 export default Button;
