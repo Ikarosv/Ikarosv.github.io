@@ -1,26 +1,38 @@
 import React from 'react';
-import styled from 'styled-components';
-import { PURPLE } from '../Colors';
+import { styled } from '../../stitches.config';
+import { PURPLE, TextColors } from '../Colors';
 
-// type Props = {
-//   secondary?: string,
-// };
-type Props = React.ComponentProps<typeof React.Component> & {
-  secondary?: boolean,
-}
-
-
-
-const Button = styled.button`
-  background-color: ${props => props.secondary ? 'transparent': PURPLE};
-  border: ${(props: Props) => props.secondary ? `1px solid rgba(255, 255, 255, 0.295743)`: 'none'};
-  border-radius: 6px;
-  padding: 18px;
-  min-width: 170px;
-  cursor: pointer;
-  text-transform: uppercase;
-  font-weight: 900;
-  font-size: 14px;
-`;
+const Button = styled('button', {
+  variants: {
+    secondary: {
+      true: {
+        backgroundColor: 'transparent',
+        border: '1px solid $borderSecondary',
+      }
+    },
+    color: {
+      ...TextColors,
+    },
+    bgColor: {
+      primary: {
+        backgroundColor: '$PURPLE',
+      }
+    }
+  },
+  defaultVariants: {
+    secondary: false,
+    color: '$light',
+    bgColor: 'primary',
+  },
+  borderRadius: '6px',
+  padding: '18px',
+  minWidth: '170px',
+  cursor: 'pointer',
+  textTransform: 'uppercase',
+  fontWeight: '900',
+  fontSize: '14px',
+  border: 'none',
+  color: '$LIGHT'
+});
 
 export default Button;
