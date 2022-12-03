@@ -1,5 +1,5 @@
 import { styled, theme } from '../../stitches.config';
-import { TextColors } from './Colors';
+import { TextColors } from '../Colors';
 
 const {colors} = theme;
 

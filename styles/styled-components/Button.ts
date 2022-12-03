@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { PURPLE } from './Colors';
+import { PURPLE } from '../Colors';
 
 // type Props = {
 //   secondary?: string,

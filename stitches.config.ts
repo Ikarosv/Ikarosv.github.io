@@ -1,5 +1,5 @@
 import { createStitches } from '@stitches/react';
-import Colors from './styles/styled-components/Colors'
+import Colors from './styles/Colors'
 
 export const {
   styled,
