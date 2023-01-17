@@ -19,7 +19,7 @@ const Button = styled('button', {
     color: '$light'
   },
   borderRadius: '6px',
-  padding: '17px',
+  padding: '17px 35px',
   maxWidth: '170px',
   width: 'fit-content',
   cursor: 'pointer',
@@ -29,6 +29,10 @@ const Button = styled('button', {
   border: 'none',
   color: '$LIGHT',
   backgroundColor: '$PURPLE',
+  '&:hover, &:focus': {
+    backgroundColor: '$PURPLE',
+    border: '1px solid transparent',
+  }
 });
 
 export default Button;
