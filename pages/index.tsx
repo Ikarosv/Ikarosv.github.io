@@ -1,19 +1,26 @@
 import Head from 'next/head'
+import { useState } from 'react';
 import Header from '../components/Header/Header'
-import Loading from '../components/Loading'
-import Button from '../styles/styled-components/Button'
-import Text from '../styles/styled-components/Text'
-import Title from '../styles/styled-components/Title'
+import { lightTheme, styled, theme } from '../stitches.config'
+
+const GenericBody = styled('div', {
+  fontSize: '20px'
+})
 
 export default function Home() {
+  const [isDarkMode, setIsDarkMode] = useState(true);
+
   return (
-    <div>
+    <GenericBody className={ isDarkMode ? theme.className : lightTheme.className }>
       <Head>
         <title>Ikaro Vieira</title>
         <meta name="description" content="Portfólio de Ikaro Vieira" />
       </Head>
-      {/* <h1>Ikaro</h1> */}
-      <Header />
-    </div>
+      <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}  />
+      <main className="bgDark">
+        <section>
+        </section>
+      </main>
+    </GenericBody>
   )
 }
