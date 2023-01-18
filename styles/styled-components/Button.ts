@@ -1,6 +1,4 @@
-import React from 'react';
 import { styled } from '../../stitches.config';
-import { PURPLE, TextColors } from '../Colors';
 
 const Button = styled('button', {
   variants: {
@@ -9,14 +7,10 @@ const Button = styled('button', {
         backgroundColor: 'transparent',
         border: '1px solid $borderSecondary',
       }
-    },
-    color: {
-      ...TextColors,
     }
   },
   defaultVariants: {
     secondary: false,
-    color: '$light'
   },
   borderRadius: '6px',
   padding: '17px 35px',
@@ -27,11 +21,13 @@ const Button = styled('button', {
   fontWeight: '900',
   fontSize: '14px',
   border: 'none',
-  color: '$LIGHT',
-  backgroundColor: '$PURPLE',
-  '&:hover, &:focus': {
-    backgroundColor: '$PURPLE',
-    border: '1px solid transparent',
+  color: '$textColor',
+  backgroundColor: 'transparent',
+  '&:hover': {
+    border: '1px solid $LIGHT',
+  },
+  '&[data-state=open]': {
+    filter: 'drop-shadow(0 0 1rem black)'
   }
 });
 
