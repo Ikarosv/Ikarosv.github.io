@@ -26,6 +26,7 @@ const slideLeftAndFade = keyframes({
 
 const contentStyles = {
   minWidth: 220,
+  color: '$testColor',
   backgroundColor: 'white',
   borderRadius: 6,
   padding: 5,
@@ -48,6 +49,7 @@ const DropdownMenuContent = styled(DropdownMenu.Content, contentStyles);
 
 const itemStyles = {
   all: 'unset',
+  color: '$DARK',
   borderRadius: 3,
   display: 'flex',
   alignItems: 'center',
@@ -58,8 +60,8 @@ const itemStyles = {
   userSelect: 'none',
 
   '&[data-highlighted]': {
-    backgroundColor: '$violet9',
-    color: '$violet1',
+    backgroundColor: '$YELLOW',
+    color: '$LIGHT',
   },
 };
 
@@ -75,25 +77,25 @@ export default function Navegation() {
   return (
     <DropdownMenuContent>
       <DropdownMenuItem>
-        <Text as="a" href="#Sobre">Sobre</Text>
+        <Text as="a" href="#Sobre">Sobre Mim</Text>
       </DropdownMenuItem>
 
       <DropdownMenuSeparator />
 
       <DropdownMenuItem>
-        <Text as="a" href="#Sobre">Tecnologias</Text>
+        <Text as="a" href="#Projetos">Projetos</Text>
       </DropdownMenuItem>
 
       <DropdownMenuSeparator />
 
       <DropdownMenuItem>
-        <Text as="a" href="#Sobre">Projetos</Text>
+        <Text as="a" href="#Skills">Skills</Text>
       </DropdownMenuItem>
 
       <DropdownMenuSeparator />
 
       <DropdownMenuItem>
-        <Text as="a" href="#Sobre">Contato</Text>
+        <Text as="a" href="#Educacao">Educação</Text>
       </DropdownMenuItem>
     </DropdownMenuContent>
   )
