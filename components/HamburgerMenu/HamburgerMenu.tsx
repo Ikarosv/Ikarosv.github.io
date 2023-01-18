@@ -4,6 +4,7 @@ import { HamburgerMenuIcon } from '@radix-ui/react-icons'
 import Button from '../../styles/styled-components/Button';
 import { styled } from '../../stitches.config';
 import Navegation from '../Navegation/Navegation';
+import {MenuHamb} from '../../icons';
 
 const DropdownMenuTrigger = styled(DropdownMenu.Trigger, {
   '@bp1': {
@@ -16,7 +17,7 @@ export default function HamburgerMenu() {
     <DropdownMenu.Root>
       <DropdownMenuTrigger asChild>
         <Button secondary>
-          <HamburgerMenuIcon />
+          <MenuHamb />
         </Button>
       </DropdownMenuTrigger>
 
