@@ -16,14 +16,14 @@ const Text = styled('p', {
         fontSize: '14px',
       }
     },
-    color: {
-      ...TextColors
-    }
+    // color: {
+    //   ...TextColors
+    // }
   },
   defaultVariants: {
-    size: 'normal',
-    color: 'dark',
-  }
+    size: 'big',
+  },
+  color: 'inherit',
 })
 
 export default Text;
