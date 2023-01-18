@@ -1,6 +1,5 @@
 import React from 'react'
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
-import { HamburgerMenuIcon } from '@radix-ui/react-icons'
 import Button from '../../styles/styled-components/Button';
 import { styled } from '../../stitches.config';
 import Navegation from '../Navegation/Navegation';
