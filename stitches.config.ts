@@ -14,21 +14,32 @@ export const {
   theme: {
     colors: {
       ...Colors,
-      borderSecondary: 'rgba(255, 255, 255, 0.295743)',
-      bgDark: '#28293E',
       ...violet,
       ...blackA,
+      textColor: TextColors.darkMode,
+      body: Colors.DARK,
+      section: Colors.DARK_GRAY,
     },
     fonts: {
-      Epilogue: 'url(./fonts/Epilogue-VariableFont_wght.ttf)'
+      Epilogue: 'url(./fonts/Epilogue-VariableFont_wght.ttf)',
+      "Open-sans": 'url(./fonts/OpenSans-VariableFont_wght.ttf)',
     },
     space: {
       padding: '16px 23px',
       responsivePadding: '9.9vw',
-    }
+    },
   },
   media: {
     bp1: '(min-width: 768px)',
     bp2: '(max-width: 767px)'
   }
 })
+
+export const lightTheme = createTheme('light-theme', {
+  colors: {
+    ...Colors,
+    textColor: TextColors.lightMode,
+    body: Colors.LIGHT,
+    section: Colors.LIGHT_GRAY,
+  }
+});
