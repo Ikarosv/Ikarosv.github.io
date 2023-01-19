@@ -35,6 +35,11 @@ const Text = styled('p', {
       extraBold: {
         fontWeight: 800,
       },
+    },
+    black: {
+      true: {
+        color: '$DARK',
+      }
     }
   },
   defaultVariants: {
