@@ -86,6 +86,7 @@ export default function Home() {
               '@bp2': {
                 order: 2,
                 alignItems: 'center',
+                textAlign: 'center',
               },
             }}>
               <Text weight="light">Meu nome é</Text>
