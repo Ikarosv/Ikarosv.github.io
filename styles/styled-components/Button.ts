@@ -12,6 +12,7 @@ const Button = styled('button', {
   defaultVariants: {
     secondary: false,
   },
+  fontFamily: '$Open-sans',
   borderRadius: '6px',
   padding: '17px 35px',
   maxWidth: '170px',
@@ -22,9 +23,9 @@ const Button = styled('button', {
   fontSize: '14px',
   border: 'none',
   color: '$textColor',
-  backgroundColor: 'transparent',
+  backgroundColor: '$YELLOW',
   '&:hover': {
-    border: '1px solid $LIGHT',
+    border: '1px solid $YELLOW',
   },
   '&[data-state=open]': {
     filter: 'drop-shadow(0 0 1rem black)'
