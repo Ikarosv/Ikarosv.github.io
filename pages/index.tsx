@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Header from '../components/Header/Header';
 import ArteInicial from '../images/ArteInicial';
 import { css, lightTheme, styled, theme } from '../stitches.config';
+import Button from '../styles/styled-components/Button';
 import Text from '../styles/styled-components/Text';
 
 const GenericBody = styled('main', {
@@ -73,6 +74,7 @@ export default function Home() {
               <Text weight="light">Meu nome é</Text>
               <Text weight="extraBold" size='big'>Ikaro Vieira</Text>
               <Text weight="strong" size='small'>Desenvolvedor Full-stack em formação</Text>
+              <Button>FALE COMIGO</Button>
             </Flex>
             <ResponsiveImage />
           </ResponsiveFlex>
