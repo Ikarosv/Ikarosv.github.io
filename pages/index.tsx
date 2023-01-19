@@ -53,7 +53,7 @@ const Main = styled('main', {
 })
 
 const ContactButton = styled(Button, {
-  alignItems: 'center',
+  alignItems: 'end',
   display: 'flex',
   justifyContent: 'space-around',
   padding: '12px 29px',
@@ -86,6 +86,7 @@ export default function Home() {
               '@bp2': {
                 order: 2,
                 alignItems: 'center',
+                textAlign: 'center',
               },
             }}>
               <Text weight="light">Meu nome é</Text>
