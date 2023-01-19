@@ -53,7 +53,7 @@ const Main = styled('main', {
 })
 
 const ContactButton = styled(Button, {
-  alignItems: 'center',
+  alignItems: 'end',
   display: 'flex',
   justifyContent: 'space-around',
   padding: '12px 29px',
