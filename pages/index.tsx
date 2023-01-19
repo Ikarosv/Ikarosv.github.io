@@ -73,7 +73,12 @@ export default function Home() {
         className={ isDarkMode ? theme.className : lightTheme.className }
       >
         <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}  />
-        <Main>
+        <Main css={{
+          padding: '0 103px 0 103px',
+          '@bp2': {
+            padding: '0 28px 0 28px',
+          }
+        }}>
           <ResponsiveFlex center>
             <Flex center directionColumn css={{
               '@bp2': {
