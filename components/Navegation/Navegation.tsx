@@ -26,7 +26,7 @@ const slideLeftAndFade = keyframes({
 
 const contentStyles = {
   minWidth: 220,
-  color: '$testColor',
+  color: '$textColor',
   backgroundColor: 'white',
   borderRadius: 6,
   padding: 5,
@@ -77,25 +77,25 @@ export default function Navegation() {
   return (
     <DropdownMenuContent>
       <DropdownMenuItem>
-        <Text as="a" href="#Sobre">Sobre Mim</Text>
+        <Text black as="a" href="#Sobre">Sobre Mim</Text>
       </DropdownMenuItem>
 
       <DropdownMenuSeparator />
 
       <DropdownMenuItem>
-        <Text as="a" href="#Projetos">Projetos</Text>
+        <Text black as="a" href="#Projetos">Projetos</Text>
       </DropdownMenuItem>
 
       <DropdownMenuSeparator />
 
       <DropdownMenuItem>
-        <Text as="a" href="#Skills">Skills</Text>
+        <Text black as="a" href="#Skills">Skills</Text>
       </DropdownMenuItem>
 
       <DropdownMenuSeparator />
 
       <DropdownMenuItem>
-        <Text as="a" href="#Educacao">Educação</Text>
+        <Text black as="a" href="#Educacao">Educação</Text>
       </DropdownMenuItem>
     </DropdownMenuContent>
   )
