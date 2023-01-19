@@ -7,23 +7,40 @@ const Text = styled('p', {
   variants: {
     size: {
       big: {
-        fontSize: '20px',
+        fontSize: '36px',
+        lineHeight: '49px',
       },
       normal: {
-        fontSize: '16px',
+        fontSize: '20px',
+        lineHeight: '32.68px',
       },
       small: {
-        fontSize: '14px',
+        fontSize: '18px',
+        lineHeight: '27px',
       }
     },
-    // color: {
-    //   ...TextColors
-    // }
+    weight: {
+      light: {
+        fontWeight: 300,
+      },
+      regular: {
+        fontWeight: 400,
+      },
+      strong: {
+        fontWeight: 600,
+      },
+      bold: {
+        fontWeight: 700,
+      },
+      extraBold: {
+        fontWeight: 800,
+      },
+    }
   },
   defaultVariants: {
-    size: 'big',
+    size: 'normal',
   },
-  color: 'inherit',
+  color: '$textColor',
 })
 
 export default Text;
