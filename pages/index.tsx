@@ -81,8 +81,10 @@ export default function Home() {
         }}>
           <ResponsiveFlex center>
             <Flex center directionColumn css={{
+              alignItems: 'start',
               '@bp2': {
-                order: 2
+                order: 2,
+                alignItems: 'center',
               },
             }}>
               <Text weight="light">Meu nome é</Text>
