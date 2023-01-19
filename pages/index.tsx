@@ -51,6 +51,15 @@ const Main = styled('main', {
   height: '110vh',
 })
 
+const ContactButton = styled(Button, {
+  alignItems: 'center',
+  display: 'flex',
+  justifyContent: 'space-around',
+  padding: '12px 29px',
+  marginTop: '39px',
+  width: '286px',
+})
+
 export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(true);
 
