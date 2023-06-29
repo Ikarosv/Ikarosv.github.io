@@ -8,10 +8,18 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      fontFamily: {
+        fira: 'var(--font-fira-code)',
+      },
+      colors: {
+        dark: '#282C33',
+        teal: '#55B6C2',
+        blue: '#62AEEF',
+        stone: '#98C379',
+        gray: '#ABB2BF',
+        primary: '#C778DD',
+        red: '#E06B74',
+        orange: '#E5C07A',
       },
     },
   },
