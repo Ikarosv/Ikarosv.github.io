@@ -2,7 +2,7 @@ import React from 'react'
 import './globals.css'
 // eslint-disable-next-line camelcase
 import { Fira_Code } from 'next/font/google'
-import Header from '@/components/Header'
+import Header from '@/components/Header/index'
 
 const FiraCode = Fira_Code({
   subsets: ['latin'],

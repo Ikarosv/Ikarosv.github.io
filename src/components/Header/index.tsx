@@ -1,38 +1,17 @@
 import { cookies } from 'next/headers'
 import Image from 'next/image'
 import Link from 'next/link'
-import translations from '../../public/translations'
+import translations from '../../../public/translations'
 import DropdownHeader from './DropdownHeader'
-
-type NavItems = {
-  name: string
-  href: string
-}
+import NavigationHeader from './NavigationHeader'
 
 function Header() {
+  const cookiesHandler = cookies()
   const clientLang: keyof typeof translations =
-    (cookies().get('LANG')?.value as 'en' | 'pt') ?? 'pt'
+    (cookiesHandler.get('LANG')?.value as 'en' | 'pt') ?? 'pt'
   const lang = clientLang in translations ? clientLang : 'pt'
-  const NAVIGATION_ITEMS: NavItems[] = [
-    {
-      name: translations[lang].home,
-      href: '/',
-    },
-    {
-      name: translations[lang].projects,
-      href: '/projects',
-    },
-    {
-      name: translations[lang].about_me,
-      href: '/about',
-    },
-    {
-      name: translations[lang].contact,
-      href: '/contact',
-    },
-  ]
   return (
-    <nav className="bg-dark max-w-screen-xl flex flex-col justify-end h-[3.813rem] pb-2">
+    <nav className="bg-dark flex flex-col justify-end h-[3.813rem] pb-2">
       <div className="flex flex-wrap items-center justify-between">
         <Link href="/" className="flex items-center">
           <Image
@@ -46,7 +25,7 @@ function Header() {
             Ikarosv
           </span>
         </Link>
-        <div className="flex items-center">
+        <div className="flex items-center font-normal">
           <button
             data-collapse-toggle="mega-menu"
             type="button"
@@ -74,18 +53,8 @@ function Header() {
           id="mega-menu"
           className="items-center justify-between hidden w-full md:flex md:w-auto"
         >
-          <ul className="flex flex-col mt-4 font-medium md:flex-row md:space-x-8 md:mt-0">
-            {NAVIGATION_ITEMS.map((item) => (
-              <li key={`${item.name}-${item.href}`}>
-                <Link
-                  href={item.href}
-                  className="block py-2 pl-3 pr-4 text-gray hover:text-white md:p-0"
-                  aria-current="page"
-                >
-                  {item.name}
-                </Link>
-              </li>
-            ))}
+          <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0">
+            <NavigationHeader lang={lang} />
             <li>
               <DropdownHeader lang={lang} />
             </li>
