@@ -4,9 +4,6 @@ const nextConfig = {
   swcMinify: true,
   output: 'standalone',
   compress: false,
-  images: {
-    unoptimized: false,
-  },
 }
 
 module.exports = nextConfig
