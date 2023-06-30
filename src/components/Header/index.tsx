@@ -12,7 +12,7 @@ function Header() {
     (cookiesHandler.get('LANG')?.value as 'en' | 'pt') ?? 'pt'
   const lang = clientLang in translations ? clientLang : 'pt'
   return (
-    <nav className="bg-dark flex flex-col justify-end h-header-height pb-2 pl-3 md:pl-0 sticky">
+    <header className="bg-dark flex flex-col justify-end h-header-height pb-2 pl-3 md:pl-0 top-0 sticky">
       <div className="flex flex-wrap items-center justify-between">
         <Link href="/" className="flex items-center">
           <Image
@@ -26,10 +26,10 @@ function Header() {
             Ikarosv
           </span>
         </Link>
-        <div className="flex items-center font-normal text-2xl">
+        <nav className="flex items-center font-normal text-2xl md:hidden">
           <MenuHamburguer lang={lang} />
-        </div>
-        <div
+        </nav>
+        <nav
           id="mega-menu"
           className="items-center justify-between hidden w-full md:flex md:w-auto"
         >
@@ -39,9 +39,9 @@ function Header() {
               <DropdownHeader lang={lang} />
             </li>
           </ul>
-        </div>
+        </nav>
       </div>
-    </nav>
+    </header>
   )
 }
 
