@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      spacing: {
+        'header-height': 'var(--header-height)',
+      },
       fontFamily: {
         fira: 'var(--font-fira-code)',
       },
