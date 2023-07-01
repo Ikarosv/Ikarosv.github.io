@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${FiraCode.variable} font-sans bg-dark bg-no-repeat text-gray`}
+        className={`${FiraCode.variable} font-fira bg-dark bg-no-repeat text-gray`}
       >
         <Header />
         {children}
