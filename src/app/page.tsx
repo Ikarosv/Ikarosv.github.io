@@ -1,7 +1,9 @@
-export default function Home() {
+import Home from '@/pages/Home'
+
+export default function Homee() {
   return (
     <main>
-      <h1>Ikaro Vieira</h1>
+      <Home />
     </main>
   )
 }
