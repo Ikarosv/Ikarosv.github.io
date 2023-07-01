@@ -25,7 +25,7 @@ export default function RootLayout({
       <body
         className={`${FiraCode.variable} font-fira bg-dark bg-no-repeat text-gray md:px-[10.69rem]`}
       >
-        <section className="absolute top-0 left-4 gap-1 flex flex-col items-center">
+        <section className="absolute top-0 left-4 gap-1 flex flex-col items-center md:hidden">
           <span className="w-px h-48 bg-gray block" />
           <div className="flex flex-col">
             <a
