@@ -27,7 +27,7 @@ export default function RootLayout({
       >
         <section className="absolute top-0 left-4 gap-1 hidden flex-col items-center md:flex">
           <span className="w-px h-48 bg-gray block" />
-          <div className="flex flex-col">
+          <div className="flex flex-col gap-1">
             <a
               href="https://github.com/Ikarosv"
               target="_blank"
@@ -36,6 +36,18 @@ export default function RootLayout({
               <Image
                 src="/icons/github.svg"
                 alt="Imagem do Github"
+                width="32"
+                height="32"
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/ikaro-vieira"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Image
+                src="/icons/linkedin.svg"
+                alt="Imagem do Linkedin"
                 width="32"
                 height="32"
               />
