@@ -6,6 +6,9 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    screens: {
+      md: '960px',
+    },
     extend: {
       spacing: {
         'header-height': 'var(--header-height)',
