@@ -1,8 +1,19 @@
 import { ReactNode } from 'react'
+import { twMerge } from 'tailwind-merge'
 
-export default function ButtonLive({ children }: { children: ReactNode }) {
+interface ButtonLiveProps {
+  children: ReactNode
+  className?: string
+}
+
+export default function ButtonLive({ children, className }: ButtonLiveProps) {
   return (
-    <button className="border border-solid border-primary hover:bg-primary hover:bg-opacity-20 px-4 py-2 w-fit h-fit text-white font-bold">
+    <button
+      className={twMerge(
+        'border border-solid border-primary hover:bg-primary hover:bg-opacity-20 px-4 py-2 w-fit h-fit text-white font-bold',
+        className,
+      )}
+    >
       {children} !!
     </button>
   )
