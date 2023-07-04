@@ -29,7 +29,7 @@ export default function Home() {
             className="-z-10 absolute top-1 w-auto h-[70%]"
           />
           <Image
-            src="/me.png"
+            src="/me2.png"
             alt="Foto de Ikaro Vieira"
             width="457"
             height="366"
