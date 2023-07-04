@@ -10,7 +10,7 @@ export default function Homee() {
   return (
     <main className="px-3 md:px-0">
       <Home />
-      <figure className="mt-28 mb-[4.62rem] border w-fit border-solid border-gray relative mx-auto -z-10 text-white">
+      <figure className="mt-28 mb-[8.56rem] border w-fit border-solid border-gray relative mx-auto -z-10 text-white">
         <Image
           src="/icons/quotes.svg"
           width={25.47}
@@ -30,6 +30,7 @@ export default function Homee() {
           - Dr. Who
         </figcaption>
       </figure>
+      <span className="w-[5.6875rem] h-[5.6875rem] border border-solid border-gray absolute top-[115vh] -right-2" />
     </main>
   )
 }

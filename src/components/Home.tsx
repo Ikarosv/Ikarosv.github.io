@@ -8,7 +8,7 @@ export default function Home() {
   const lang: Lang = (cookies().get('LANG')?.value as Lang) ?? 'pt'
   const { homeTitle, homeDescription, working, contactMe } = translations[lang]
   return (
-    <section className="min-h-[calc(100vh-var(--header-height))] w-full pt-[2.12rem] md:pt-[3.87rem] flex flex-col md:flex-row justify-around gap-4">
+    <section className="w-full pt-[2.12rem] md:pt-[3.87rem] flex flex-col md:flex-row justify-around gap-4">
       <div className="flex flex-col md:mt-16">
         <h1
           className="font-semibold font-fira text-3xl text-white"

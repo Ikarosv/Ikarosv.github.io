@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${FiraCode.variable} font-fira bg-dark bg-no-repeat text-gray md:px-[10.69rem]`}
+        className={`${FiraCode.variable} font-fira bg-dark bg-no-repeat text-gray md:px-[10.69rem] overflow-x-hidden`}
       >
         <section className="absolute top-0 left-4 gap-1 hidden flex-col items-center md:flex">
           <span className="w-px h-48 bg-gray block" />
