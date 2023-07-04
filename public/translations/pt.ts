@@ -9,6 +9,7 @@ const pt = {
     'Ele ama aprender, resolver problemas e é apaixonado por tecnologia e criatividade.',
   working: 'Atualmente trabalhando em ',
   contactMe: 'Contate-me',
+  quote: 'Com grande poder vem uma grande conta de eletricidade',
 }
 
 export default pt

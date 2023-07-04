@@ -6,4 +6,6 @@ const translations = {
   en,
 }
 
+export type Lang = keyof typeof translations
+
 export default translations
