@@ -33,7 +33,6 @@ export default function RootLayout({
               target="_blank"
               rel="noreferrer"
             >
-              
               <Image
                 src="/icons/github.svg"
                 alt="Imagem do Github"
