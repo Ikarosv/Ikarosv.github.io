@@ -1,4 +1,5 @@
 import axios from 'axios'
+import { NextResponse } from 'next/server'
 
 const PERSONAL_TOKEN = process.env.GITHUB_PERSONAL_TOKEN || ''
 
@@ -49,9 +50,9 @@ export const GET = async () => {
         ),
       }))
 
-    return Response.json(pinnedItems)
+    return NextResponse.json(pinnedItems)
   } catch (error) {
     console.error(error)
-    return Response.json({ error: 'Erro ao obter projetos do GitHub' })
+    return NextResponse.json({ error: 'Erro ao obter projetos do GitHub' })
   }
 }
