@@ -10,11 +10,11 @@ export default function ButtonLive({ children, className }: ButtonLiveProps) {
   return (
     <button
       className={twMerge(
-        'border border-solid border-primary hover:bg-primary hover:bg-opacity-20 px-4 py-2 w-fit h-fit text-white font-bold',
+        'border border-solid border-primary hover:bg-primary hover:bg-opacity-20 px-4 py-2 w-fit h-fit text-white font-medium',
         className,
       )}
     >
-      {children} !!
+      {children}
     </button>
   )
 }
