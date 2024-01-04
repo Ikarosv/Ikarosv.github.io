@@ -7,9 +7,10 @@ interface GithubResponse {
     user: {
       pinnedItems: {
         nodes: {
+          id: string
           name: string
-          projectsUrl: string
-          homepageUrl: string
+          description: string
+          homepageUrl: string | null
           url: string
           repositoryTopics: {
             nodes: {
@@ -30,7 +31,7 @@ export const GET = async () => {
       'https://api.github.com/graphql',
       {
         query:
-          'query { user(login: "Ikarosv") { pinnedItems(first: 6, types: REPOSITORY) { nodes { ... on Repository { id name projectsUrl homepageUrl url repositoryTopics(first: 8) { nodes { topic { name } } } } } } } }',
+          'query { user(login: "Ikarosv") { pinnedItems(first: 6, types: REPOSITORY) { nodes { ... on Repository { id name description homepageUrl url repositoryTopics(first: 8) { nodes { topic { name } } } } } } } }',
       },
       {
         headers: {
