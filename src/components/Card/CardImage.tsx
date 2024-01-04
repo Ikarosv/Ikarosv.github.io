@@ -1,8 +1,8 @@
 import { ClassNameValue, twMerge } from 'tailwind-merge'
 
 interface CardImageProps {
-  imageUrl: string
-  altText: string
+  imageUrl?: string
+  altText?: string
   className?: ClassNameValue
 }
 
