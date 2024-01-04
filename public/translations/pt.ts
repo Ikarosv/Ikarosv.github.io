@@ -8,7 +8,7 @@ const pt = {
   homeDescription:
     'Ele ama aprender, resolver problemas e é apaixonado por tecnologia e criatividade.',
   working: 'Atualmente trabalhando em ',
-  contactMe: 'Contate-me',
+  contactMe: 'Contate-me !!',
   quote: 'Com grande poder vem uma grande conta de eletricidade',
   viewAll: 'Ver todos ~~>',
 }

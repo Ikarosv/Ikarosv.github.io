@@ -8,7 +8,7 @@ const en = {
   homeDescription:
     'He loves learning, solving problems, and is passionate about technology and creativity.',
   working: 'Currently working on ',
-  contactMe: 'Contact me',
+  contactMe: 'Contact me !!',
   quote: 'With great power comes great electricity bill',
   viewAll: 'View all ~~>',
 }
