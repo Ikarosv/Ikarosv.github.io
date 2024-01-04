@@ -10,6 +10,7 @@ const pt = {
   working: 'Atualmente trabalhando em ',
   contactMe: 'Contate-me',
   quote: 'Com grande poder vem uma grande conta de eletricidade',
+  viewAll: 'Ver todos ~~>',
 }
 
 export default pt

@@ -10,6 +10,7 @@ const en = {
   working: 'Currently working on ',
   contactMe: 'Contact me',
   quote: 'With great power comes great electricity bill',
+  viewAll: 'View all ~~>',
 }
 
 export default en

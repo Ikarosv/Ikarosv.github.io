@@ -2,11 +2,13 @@ import Home from '@/components/Home'
 import { cookies } from 'next/headers'
 import translations, { Lang } from '../../public/translations'
 import Image from 'next/image'
+import Title from '@/components/Title'
+import Link from 'next/link'
 
 export default function Homee() {
   const lang: Lang = (cookies().get('LANG')?.value as Lang) ?? 'pt'
 
-  const { quote } = translations[lang]
+  const { quote, projects, viewAll } = translations[lang]
   return (
     <main className="px-3 md:px-0">
       <Home />
@@ -30,7 +32,16 @@ export default function Homee() {
           - Dr. Who
         </figcaption>
       </figure>
-      <span className="w-[5.6875rem] h-[5.6875rem] border border-solid border-gray absolute top-[115vh] -right-2" />
+      <span className="w-[5.6875rem] h-[5.6875rem] hidden border border-solid border-gray absolute top-[115vh] -right-2 md:block" />
+      <section className="flex justify-between items-center w-full">
+        <Title lineWidth="max-w-[31rem]">{projects}</Title>
+        <Link
+          href="/projects"
+          className="text-base p-1 font-medium text-white cursor-pointer hover:text-gray min-w-fit ml-4"
+        >
+          {viewAll}
+        </Link>
+      </section>
     </main>
   )
 }
