@@ -12,7 +12,7 @@ function Header() {
     (cookiesHandler.get('LANG')?.value as 'en' | 'pt') ?? 'pt'
   const lang = clientLang in translations ? clientLang : 'pt'
   return (
-    <header className="bg-dark flex flex-col justify-end h-header-height pb-2 pl-3 md:pl-0 top-0 sticky">
+    <header className="bg-dark flex flex-col justify-end h-header-height pb-2 pl-3 md:pl-0 top-0 sticky z-50">
       <div className="flex flex-wrap items-center justify-between">
         <Link href="/" className="flex items-center">
           <Image

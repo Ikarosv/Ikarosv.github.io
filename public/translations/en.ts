@@ -11,6 +11,12 @@ const en = {
   contactMe: 'Contact me !!',
   quote: 'With great power comes great electricity bill',
   viewAll: 'View all ~~>',
+  skills: 'Skills',
+  languages: 'Languages',
+  databases: 'Databases',
+  other: 'Other',
+  tools: 'Tools',
+  style: 'Style',
 }
 
 export default en

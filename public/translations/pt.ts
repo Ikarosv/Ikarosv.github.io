@@ -11,6 +11,12 @@ const pt = {
   contactMe: 'Contate-me !!',
   quote: 'Com grande poder vem uma grande conta de eletricidade',
   viewAll: 'Ver todos ~~>',
+  skills: 'Habilidades',
+  languages: 'Linguagens',
+  databases: 'Bancos de dados',
+  other: 'Outros',
+  tools: 'Ferramentas',
+  style: 'Estilo',
 }
 
 export default pt

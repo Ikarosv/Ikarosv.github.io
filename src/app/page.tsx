@@ -6,6 +6,8 @@ import Image from 'next/image'
 import Title from '@/components/Title'
 import Link from 'next/link'
 import Card from '@/components/Card'
+import Retangle from '@/components/Retangle'
+import DotGroup from '@/components/DotGroup'
 
 const url = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'
 
@@ -15,7 +17,17 @@ export default async function Homee() {
     GithubRepository.PinnedItems[]
   >((res) => res.json())
 
-  const { quote, projects, viewAll } = translations[lang]
+  const {
+    quote,
+    projects,
+    viewAll,
+    skills,
+    languages,
+    databases,
+    other,
+    tools,
+    style,
+  } = translations[lang]
   return (
     <main className="px-3 md:px-0">
       <Home />
@@ -38,9 +50,14 @@ export default async function Homee() {
         <figcaption className="text-2xl absolute -right-px font-normal border border-solid border-gray p-4">
           - Dr. Who
         </figcaption>
+        <Retangle position="top-0 -right-56" />
       </figure>
-      <span className="w-[5.6875rem] h-[5.6875rem] hidden border border-solid border-gray absolute top-[115vh] -right-2 md:block" />
-      <section>
+      {/* <span className="w-[5.6875rem] h-[5.6875rem] hidden border border-solid border-gray absolute top-[115vh] -right-2 md:block" /> */}
+      <section className="relative">
+        <Retangle
+          className="w-[9.6875rem] h-[9.6875rem]"
+          position="top-[16.875rem] -right-56"
+        />
         <div className="flex max-ssm:flex-wrap justify-between items-center w-full">
           <Title lineWidth="max-w-[31rem]">{projects}</Title>
           <Link
@@ -65,6 +82,81 @@ export default async function Homee() {
               />
             </Card>
           ))}
+        </div>
+      </section>
+      <section className="mt-[6.625rem]">
+        <div className="flex max-ssm:flex-wrap justify-between items-center w-full">
+          <Title lineWidth="max-w-[15rem]">{skills}</Title>
+        </div>
+
+        <div className="flex flex-col justify-center md:justify-between md:flex-row">
+          <div className="w-full md:w-[21.8125rem] h-[17.625rem] relative mt-3">
+            <div className="grid grid-rows-5 grid-cols-5 w-[3.9375rem] gap-3 absolute top-[2.38rem]">
+              <DotGroup />
+            </div>
+            <div className="grid grid-rows-5 grid-cols-5 w-[3.9375rem] gap-3 absolute top-[8.9375rem] left-[11.0625rem]">
+              <DotGroup />
+            </div>
+            <Retangle
+              position="right-9"
+              className="w-[5.375rem] h-[5.375rem] block"
+            />
+            <Retangle
+              position="bottom-[2.3125rem] right-0"
+              className="w-[3.25rem] h-[3.25rem] block"
+            />
+            <Image
+              src="/IOutlined.png"
+              alt="I maiúsculo"
+              width="90"
+              height="90"
+              className="absolute bottom-0 left-[0.9375rem]"
+            />
+          </div>
+          <div className="flex flex-wrap gap-4 mt-12 justify-center max-w-xl">
+            <Card className="h-fit max-w-[11.125rem]">
+              <Card.Details
+                title={languages}
+                description="JavaScript TypeScript Python Java Kotlin PHP"
+                className="card separate-children p-0 gap-0"
+              />
+            </Card>
+            <Card className="h-fit max-w-[11.125rem]">
+              <Card.Details
+                title={databases}
+                description="MySQL PostgreSQL MongoDB"
+                className="card separate-children p-0 gap-0"
+              />
+            </Card>
+            <Card className="h-fit max-w-[11.125rem]">
+              <Card.Details
+                title={tools}
+                description="VsCode Git Docker Postman Insomnia Figma Linux Font-Awesome Github"
+                className="card separate-children p-0 gap-0"
+              />
+            </Card>
+            <Card className="h-fit max-w-[11.125rem]">
+              <Card.Details
+                title={other}
+                description="HTML CSS SCSS REST Scrum Kanban TDD"
+                className="card separate-children p-0 gap-0"
+              />
+            </Card>
+            <Card className="h-fit max-w-[11.125rem]">
+              <Card.Details
+                title="Frameworks"
+                description="React Next.js Node.js Express.js Fastify Nest.js Redux ContextAPI Jotai Zod Jest Mocha Chai Sinon Prisma Sequelize Medusa"
+                className="card separate-children p-0 gap-0"
+              />
+            </Card>
+            <Card className="h-fit max-w-[11.125rem]">
+              <Card.Details
+                title={style}
+                description="TailwindCSS Bootstrap MaterializeCSS Styled-Components Stitches Emotion Ant-Design ShadcnUi"
+                className="card separate-children p-0 gap-0"
+              />
+            </Card>
+          </div>
         </div>
       </section>
     </main>

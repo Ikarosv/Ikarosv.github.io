@@ -4,6 +4,7 @@ import './globals.css'
 import { Fira_Code } from 'next/font/google'
 import Header from '@/components/Header/index'
 import Image from 'next/image'
+import { twMerge } from 'tailwind-merge'
 
 const FiraCode = Fira_Code({
   subsets: ['latin'],
@@ -23,7 +24,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${FiraCode.variable} font-fira bg-dark bg-no-repeat text-gray md:px-[10.69rem] overflow-x-hidden`}
+        className={twMerge(
+          `${FiraCode.variable} font-fira bg-dark bg-no-repeat text-gray max-w-7xl m-auto md:px-[10.69rem] w-screen overflow-x-hidden`,
+        )}
       >
         <section className="absolute top-0 left-4 gap-1 hidden flex-col items-center md:flex">
           <span className="w-px h-48 bg-gray block" />
