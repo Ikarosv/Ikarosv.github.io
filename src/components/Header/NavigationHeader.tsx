@@ -24,7 +24,7 @@ export default function NavigationHeader({
       href: '/projects',
     },
     {
-      name: translations[lang].about_me,
+      name: translations[lang].aboutMe,
       href: '/about',
     },
     {
