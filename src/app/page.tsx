@@ -159,6 +159,29 @@ export default async function Homee() {
           </div>
         </div>
       </section>
+      <section className="mt-[6.625rem]">
+        <div className="flex max-ssm:flex-wrap justify-between items-center w-full">
+          <Title lineWidth="max-w-[20rem]">{aboutMe}</Title>
+        </div>
+        <div className="flex gap-2 items-center justify-between">
+          <div className="flex flex-col gap-7">
+            <p
+              className="text-base font-normal max-w-[31rem]"
+              dangerouslySetInnerHTML={{ __html: aboutMeContent }}
+            ></p>
+            <ButtonLive>
+              <Link href="/about">{readMore}</Link>
+            </ButtonLive>
+          </div>
+          <Image
+            src="/me2.png"
+            alt="Ikaro"
+            width="343"
+            height="508"
+            className="border-b border-b-primary border-solid"
+          />
+        </div>
+      </section>
     </main>
   )
 }

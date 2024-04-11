@@ -1,7 +1,7 @@
 const pt = {
   home: 'início',
   projects: 'projetos',
-  about_me: 'sobre_mim',
+  aboutMe: 'sobre_mim',
   contact: 'contato',
   homeTitle:
     'Ikaro é um <span class="text-primary">desenvolvedor web full-stack</span>.',
@@ -17,6 +17,10 @@ const pt = {
   other: 'Outros',
   tools: 'Ferramentas',
   style: 'Estilo',
+  aboutMeContent: `Olá,  sou um Desenvolvedor Web Full Stack, atualmente estou aprendendo Kotlin. Estou determinado a iniciar minha carreira profissional com uma imensa paixão por resolução de problemas e uma sede constante de aprendizado, o que me impulsiona a buscar novos conhecimentos e a evoluir continuamente.
+  <br><br>
+  Ao longo dos últimos dois anos, venho estudando programação, começando com Python. Com o tempo, expandi minha expertise para outras tecnologias relevantes na área de desenvolvimento web.`,
+  readMore: 'Leia mais ->',
 }
 
 export default pt
