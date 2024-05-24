@@ -21,6 +21,9 @@ const en = {
   <br><br>
   Over the past two years, I have been studying programming, starting with Python. Over time, I expanded my expertise to other relevant technologies in the area of ​​web development.`,
   readMore: 'Read more ->',
+  contactContent:
+    'I’m interested in all opportunities, including freelance, full-time employment, contract, and other arrangements. If you have any other requests or questions, don’t hesitate to contact me!',
+  messageMe: 'Message me here',
 }
 
 export default en

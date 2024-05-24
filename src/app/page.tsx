@@ -8,6 +8,7 @@ import Link from 'next/link'
 import Card from '@/components/Card'
 import Retangle from '@/components/Retangle'
 import DotGroup from '@/components/DotGroup'
+import ButtonLive from '@/components/Buttons/ButtonLive'
 
 const url = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'
 
@@ -27,6 +28,12 @@ export default async function Homee() {
     other,
     tools,
     style,
+    aboutMe,
+    aboutMeContent,
+    readMore,
+    contact,
+    contactContent,
+    messageMe,
   } = translations[lang]
   return (
     <main className="px-3 md:px-0">
@@ -180,6 +187,48 @@ export default async function Homee() {
             height="508"
             className="border-b border-b-primary border-solid"
           />
+        </div>
+      </section>
+
+      <section className="mt-[6.625rem]">
+        <div className="flex max-ssm:flex-wrap justify-between items-center w-full">
+          <Title lineWidth="max-w-[8rem]">{contact}</Title>
+        </div>
+        <div className="flex mt-10 gap-2 items-center justify-between">
+          <p className="flex-shrink">{contactContent}</p>
+          <div className="flex flex-col p-4 border border-gray border-solid w-max">
+            <h5 className="whitespace-nowrap font-semibold text-white">
+              {messageMe}
+            </h5>
+            <div className="flex items-center w-max">
+              <Image
+                src="/icons/email.svg"
+                width={32}
+                height={32}
+                alt="email"
+              />
+              <a
+                href="mailto:ikarovieiraa@gmail.com"
+                className="text-gray inline-block"
+              >
+                ikarovieiraa@gmail.com
+              </a>
+            </div>
+            <div className="flex items-center w-max">
+              <Image
+                src="/icons/discord.svg"
+                width={32}
+                height={32}
+                alt="email"
+              />
+              <a
+                href="mailto:ikarovieiraa@gmail.com"
+                className="text-gray inline-block"
+              >
+                ikarovieiraa@gmail.com
+              </a>
+            </div>
+          </div>
         </div>
       </section>
     </main>

@@ -21,6 +21,9 @@ const pt = {
   <br><br>
   Ao longo dos últimos dois anos, venho estudando programação, começando com Python. Com o tempo, expandi minha expertise para outras tecnologias relevantes na área de desenvolvimento web.`,
   readMore: 'Leia mais ->',
+  contactContent:
+    'Estou interessado em todas as oportunidades, incluindo freelancer, CLT, PJ e contrato. Se tiver outras solicitações ou dúvidas, não hesite em entrar em contato comigo!',
+  messageMe: 'Entre em contato aqui',
 }
 
 export default pt
