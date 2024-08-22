@@ -24,6 +24,8 @@ const en = {
   contactContent:
     'I’m interested in all opportunities, including freelance, full-time employment, contract, and other arrangements. If you have any other requests or questions, don’t hesitate to contact me!',
   messageMe: 'Message me here',
+  fullStackWebDeveloper: 'Full Stack Web Developer',
+  media: 'Media',
 }
 
 export default en

@@ -24,6 +24,8 @@ const pt = {
   contactContent:
     'Estou interessado em todas as oportunidades, incluindo freelancer, CLT, PJ e contrato. Se tiver outras solicitações ou dúvidas, não hesite em entrar em contato comigo!',
   messageMe: 'Entre em contato aqui',
+  fullStackWebDeveloper: 'Desenvolvedor Web Full Stack',
+  media: 'Redes',
 }
 
 export default pt

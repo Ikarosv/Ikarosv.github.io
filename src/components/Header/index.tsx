@@ -1,10 +1,9 @@
 import { cookies } from 'next/headers'
-import Image from 'next/image'
-import Link from 'next/link'
 import translations from '../../../public/translations'
 import DropdownHeader from './DropdownHeader'
 import NavigationHeader from './NavigationHeader'
 import MenuHamburguer from './MenuHamburguer'
+import NameLogo from '../NameLogo'
 
 function Header() {
   const cookiesHandler = cookies()
@@ -14,18 +13,7 @@ function Header() {
   return (
     <header className="bg-dark flex flex-col justify-end h-header-height pb-2 pl-3 md:pl-0 top-0 sticky z-50">
       <div className="flex flex-wrap items-center justify-between">
-        <Link href="/" className="flex items-center">
-          <Image
-            src="/logo.png"
-            className="h-4 mr-2"
-            width={16}
-            height={16}
-            alt="Ikarosv logo"
-          />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-            Ikarosv
-          </span>
-        </Link>
+        <NameLogo />
         <nav className="flex items-center font-normal text-2xl md:hidden">
           <MenuHamburguer lang={lang} />
         </nav>

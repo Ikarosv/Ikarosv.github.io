@@ -121,42 +121,42 @@ export default async function Homee() {
             />
           </div>
           <div className="flex flex-wrap gap-4 mt-12 justify-center max-w-xl">
-            <Card className="h-fit max-w-[11.125rem]">
+            <Card className="h-fit w-full md:max-w-[11.125rem]">
               <Card.Details
                 title={languages}
                 description="JavaScript TypeScript Python Java Kotlin PHP"
                 className="card separate-children p-0 gap-0"
               />
             </Card>
-            <Card className="h-fit max-w-[11.125rem]">
+            <Card className="h-fit w-full md:max-w-[11.125rem]">
               <Card.Details
                 title={databases}
                 description="MySQL PostgreSQL MongoDB"
                 className="card separate-children p-0 gap-0"
               />
             </Card>
-            <Card className="h-fit max-w-[11.125rem]">
+            <Card className="h-fit w-full md:max-w-[11.125rem]">
               <Card.Details
                 title={tools}
                 description="VsCode Git Docker Postman Insomnia Figma Linux Font-Awesome Github"
                 className="card separate-children p-0 gap-0"
               />
             </Card>
-            <Card className="h-fit max-w-[11.125rem]">
+            <Card className="h-fit w-full md:max-w-[11.125rem]">
               <Card.Details
                 title={other}
                 description="HTML CSS SCSS REST Scrum Kanban TDD"
                 className="card separate-children p-0 gap-0"
               />
             </Card>
-            <Card className="h-fit max-w-[11.125rem]">
+            <Card className="h-fit w-full md:max-w-[11.125rem]">
               <Card.Details
                 title="Frameworks"
                 description="React Next.js Node.js Express.js Fastify Nest.js Redux ContextAPI Jotai Zod Jest Mocha Chai Sinon Prisma Sequelize Medusa"
                 className="card separate-children p-0 gap-0"
               />
             </Card>
-            <Card className="h-fit max-w-[11.125rem]">
+            <Card className="h-fit w-full md:max-w-[11.125rem]">
               <Card.Details
                 title={style}
                 description="TailwindCSS Bootstrap MaterializeCSS Styled-Components Stitches Emotion Ant-Design ShadcnUi"
@@ -170,7 +170,7 @@ export default async function Homee() {
         <div className="flex max-ssm:flex-wrap justify-between items-center w-full">
           <Title lineWidth="max-w-[20rem]">{aboutMe}</Title>
         </div>
-        <div className="flex gap-2 items-center justify-between">
+        <div className="flex flex-wrap md:flex-nowrap gap-2 items-center justify-between">
           <div className="flex flex-col gap-7">
             <p
               className="text-base font-normal max-w-[31rem]"
@@ -194,7 +194,7 @@ export default async function Homee() {
         <div className="flex max-ssm:flex-wrap justify-between items-center w-full">
           <Title lineWidth="max-w-[8rem]">{contact}</Title>
         </div>
-        <div className="flex mt-10 gap-2 items-center justify-between">
+        <div className="flex flex-wrap md:flex-nowrap mt-10 gap-2 items-center justify-between">
           <p className="flex-shrink">{contactContent}</p>
           <div className="flex flex-col p-4 border border-gray border-solid w-max">
             <h5 className="whitespace-nowrap font-semibold text-white">
