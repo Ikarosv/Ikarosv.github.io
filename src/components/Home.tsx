@@ -2,7 +2,7 @@ import translations from '../../public/translations'
 import Image from 'next/image'
 import DotGroup from '@/components/DotGroup'
 import ButtonLive from '@/components/Buttons/ButtonLive'
-import getLanguage from '@/app/utils/getLanguage'
+import getLanguage from '@/utils/getLanguage'
 
 export default function Home() {
   const lang = getLanguage()

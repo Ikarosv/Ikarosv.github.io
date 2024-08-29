@@ -8,4 +8,13 @@ declare namespace GithubRepository {
     url: string
     repositoryTopics: string[]
   }
+
+  interface All {
+    id: string
+    name: string
+    description: string
+    homepageUrl: string | null
+    url: string
+    repositoryTopics: string[]
+  }
 }

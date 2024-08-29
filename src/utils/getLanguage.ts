@@ -1,5 +1,5 @@
 import { cookies } from 'next/headers'
-import translations from '../../../public/translations'
+import translations from '../../public/translations'
 
 export default function getLanguage() {
   const cookiesHandler = cookies()

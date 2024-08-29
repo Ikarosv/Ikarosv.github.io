@@ -26,6 +26,9 @@ const en = {
   messageMe: 'Message me here',
   fullStackWebDeveloper: 'Full Stack Web Developer',
   media: 'Media',
+  listOfMyProjects: 'List of my projects',
+  pinneds: 'pinneds',
+  allProjects: 'all_projects',
 }
 
 export default en

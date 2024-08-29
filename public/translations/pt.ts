@@ -26,6 +26,9 @@ const pt = {
   messageMe: 'Entre em contato aqui',
   fullStackWebDeveloper: 'Desenvolvedor Web Full Stack',
   media: 'Redes',
+  listOfMyProjects: 'Lista de meus projetos',
+  pinneds: 'pinados',
+  allProjects: 'todos_os_projetos',
 }
 
 export default pt

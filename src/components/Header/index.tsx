@@ -2,7 +2,7 @@ import DropdownHeader from './DropdownHeader'
 import NavigationHeader from './NavigationHeader'
 import MenuHamburguer from './MenuHamburguer'
 import NameLogo from '../NameLogo'
-import getLanguage from '@/app/utils/getLanguage'
+import getLanguage from '@/utils/getLanguage'
 
 function Header() {
   const lang = getLanguage()
