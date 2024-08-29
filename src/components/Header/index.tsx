@@ -1,17 +1,13 @@
-import { cookies } from 'next/headers'
-import translations from '../../../public/translations'
 import DropdownHeader from './DropdownHeader'
 import NavigationHeader from './NavigationHeader'
 import MenuHamburguer from './MenuHamburguer'
 import NameLogo from '../NameLogo'
+import getLanguage from '@/app/utils/getLanguage'
 
 function Header() {
-  const cookiesHandler = cookies()
-  const clientLang: keyof typeof translations =
-    (cookiesHandler.get('LANG')?.value as 'en' | 'pt') ?? 'pt'
-  const lang = clientLang in translations ? clientLang : 'pt'
+  const lang = getLanguage()
   return (
-    <header className="bg-dark flex flex-col justify-end h-header-height pb-2 pl-3 md:pl-0 top-0 sticky z-50">
+    <header className="bg-dark flex flex-col justify-end h-header-height pb-2 pl-3 md:pl-0 top-0 sticky z-50 mb-[2.12rem] md:mb-[3.87rem] ">
       <div className="flex flex-wrap items-center justify-between">
         <NameLogo />
         <nav className="flex items-center font-normal text-2xl md:hidden">

@@ -1,14 +1,14 @@
-import { cookies } from 'next/headers'
-import translations, { Lang } from '../../public/translations'
+import translations from '../../public/translations'
 import Image from 'next/image'
 import DotGroup from '@/components/DotGroup'
 import ButtonLive from '@/components/Buttons/ButtonLive'
+import getLanguage from '@/app/utils/getLanguage'
 
 export default function Home() {
-  const lang: Lang = (cookies().get('LANG')?.value as Lang) ?? 'pt'
+  const lang = getLanguage()
   const { homeTitle, homeDescription, working, contactMe } = translations[lang]
   return (
-    <section className="w-full pt-[2.12rem] md:pt-[3.87rem] flex flex-col md:flex-row justify-around gap-4">
+    <section className="w-full flex flex-col md:flex-row justify-around gap-4">
       <div className="flex flex-col md:mt-16">
         <h1
           className="font-semibold font-fira text-3xl text-white"
