@@ -37,7 +37,7 @@ export default function NavigationHeader({
       <Link
         href={item.href}
         className={`block py-2 pl-3 pr-4 text-gray hover:text-white md:p-0 ${
-          pathname.startsWith(item.href) ? 'text-white font-bold' : ''
+          pathname === item.href ? 'text-white font-bold' : ''
         }`}
       >
         <span className="text-primary">#</span>
