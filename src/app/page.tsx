@@ -207,13 +207,13 @@ export default async function Homee() {
                 src="/icons/discord.svg"
                 width={32}
                 height={32}
-                alt="email"
+                alt="discord icon"
               />
               <a
-                href="mailto:ikarovieiraa@gmail.com"
+                href="https://discord.com/invite/77wvu2Cm"
                 className="text-gray inline-block"
               >
-                ikarovieiraa@gmail.com
+                ikarosv
               </a>
             </div>
           </div>

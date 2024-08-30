@@ -35,6 +35,12 @@ const en = {
   iHaveADogNamedPrincesa: 'I have a dog named Princesa',
   iAmVeryPerfectionist: 'I am very perfectionist (sometimes)',
   myFavoriteSerieIsGreysAnatomy: "My favorite series is Grey's Anatomy",
+  talkToMe: 'Talk to me!',
+  name: 'Name',
+  email: 'Email',
+  title: 'Title',
+  message: 'Message',
+  send: 'Send',
 }
 
 export default en

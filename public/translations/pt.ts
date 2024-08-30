@@ -35,6 +35,12 @@ const pt = {
   iHaveADogNamedPrincesa: 'Eu tenho uma cachorra chamada Princesa',
   iAmVeryPerfectionist: 'Eu sou muito perfeccionista (as vezes)',
   myFavoriteSerieIsGreysAnatomy: "Minha série favorita é Grey's Anatomy",
+  talkToMe: 'Fale comigo!',
+  name: 'Nome',
+  email: 'Email',
+  title: 'Título',
+  message: 'Mensagem',
+  send: 'Enviar',
 }
 
 export default pt

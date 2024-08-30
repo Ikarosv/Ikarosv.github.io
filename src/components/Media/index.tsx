@@ -24,6 +24,21 @@ export default function Media() {
           height="32"
         />
       </a>
+      <a
+        href="https://discord.com/invite/77wvu2Cm"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <Image
+          src="/icons/discord.svg"
+          width={32}
+          height={32}
+          alt="discord icon"
+        />
+      </a>
+      <a href="mailto:ikarovieiraa@gmail.com" target="_blank" rel="noreferrer">
+        <Image src="/icons/email.svg" width={32} height={32} alt="email" />
+      </a>
     </>
   )
 }
