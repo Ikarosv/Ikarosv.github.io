@@ -3,11 +3,16 @@ import translations, { Lang } from '../../../public/translations'
 import { cookies } from 'next/headers'
 import Title from '@/components/Title'
 import DisplayProjects from '@/components/DisplayProjects'
+import capitalizeFirstLetter from '@/utils/capitalizeFirstLetter'
 
+const lang: Lang = (cookies().get('LANG')?.value as Lang) ?? 'pt'
+const { projects, listOfMyProjects, pinneds, allProjects } = translations[lang]
+export const metadata = {
+  title: `Ikaro Vieira | ${capitalizeFirstLetter(projects)}`,
+}
 const url = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'
 
 export default async function Project() {
-  const lang: Lang = (cookies().get('LANG')?.value as Lang) ?? 'pt'
   const githubProjects = await fetch(`${url}/api/github/all`).then<
     // eslint-disable-next-line no-undef
     GithubRepository.All[]
@@ -17,8 +22,6 @@ export default async function Project() {
     GithubRepository.All[]
   >((res) => res.json())
 
-  const { projects, listOfMyProjects, pinneds, allProjects } =
-    translations[lang]
   return (
     <section className="px-3 md:px-0">
       <h1 className="text-white font-bold text-[2rem]">
