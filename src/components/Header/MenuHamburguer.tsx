@@ -4,6 +4,7 @@ import translations from '../../../public/translations'
 import NavigationHeader from './NavigationHeader'
 import React from 'react'
 import DropdownHeader from './DropdownHeader'
+import Media from '../Media'
 
 export default function MenuHamburguer({
   lang,
@@ -23,11 +24,16 @@ export default function MenuHamburguer({
         ></span>
       </Menu.Button>
       <Menu.Items className="absolute top-0 right-0 mt-header-height origin-top-right w-screen h-[calc(100vh-var(--header-height))] bg-dark list-none">
-        {React.Children.map(<NavigationHeader lang={lang} />, (child) => (
-          <Menu.Item>{child}</Menu.Item>
-        ))}
+        <Menu.Item>
+          {({ close }) => <NavigationHeader lang={lang} onClick={close} />}
+        </Menu.Item>
         <Menu.Item>
           <DropdownHeader lang={lang} />
+        </Menu.Item>
+        <Menu.Item>
+          <div className="flex absolute w-full justify-center bottom-4">
+            <Media />
+          </div>
         </Menu.Item>
       </Menu.Items>
     </Menu>

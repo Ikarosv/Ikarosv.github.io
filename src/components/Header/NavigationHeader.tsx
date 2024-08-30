@@ -10,8 +10,10 @@ type NavItems = {
 
 export default function NavigationHeader({
   lang,
+  onClick,
 }: {
   lang: keyof typeof translations
+  onClick?: () => void
 }) {
   const pathname = usePathname()
   const NAVIGATION_ITEMS: NavItems[] = [
@@ -36,6 +38,7 @@ export default function NavigationHeader({
     <li key={`${item.name}-${item.href}`}>
       <Link
         href={item.href}
+        onClick={onClick}
         className={`block py-2 pl-3 pr-4 text-gray hover:text-white md:p-0 ${
           pathname === item.href ? 'text-white font-bold' : ''
         }`}
