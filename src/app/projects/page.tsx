@@ -20,7 +20,7 @@ export default async function Project() {
   const { projects, listOfMyProjects, pinneds, allProjects } =
     translations[lang]
   return (
-    <section>
+    <section className="px-3 md:px-0">
       <h1 className="text-white font-bold text-[2rem]">
         <span className="text-primary">/</span>
         {projects}
@@ -36,7 +36,7 @@ export default async function Project() {
       <div className="mt-4">
         <Title lineWidth="max-w-[8rem]">{allProjects}</Title>
         <section className="flex flex-wrap gap-4 mt-12 justify-center">
-          <DisplayProjects projects={githubProjects} />
+          <DisplayProjects projects={githubProjects} showImage={false} />
         </section>
       </div>
     </section>

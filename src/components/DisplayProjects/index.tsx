@@ -5,10 +5,12 @@ import Card from '../Card'
 interface DisplayProjectsProps {
   // eslint-disable-next-line no-undef
   projects: GithubRepository.All[]
+  showImage?: boolean
 }
 
 export default async function DisplayProjects({
   projects,
+  showImage = true,
 }: DisplayProjectsProps) {
   /* const projectsWithHomepageUrl = projects.filter(
     (project) => project.homepageUrl,
@@ -24,13 +26,15 @@ export default async function DisplayProjects({
 
   return projects.map((project) => (
     <Card key={project.id}>
-      <Card.Image
-      /* imageUrl={
+      {showImage && (
+        <Card.Image
+        /* imageUrl={
           project.homepageUrl
             ? await captureScreenshot(project.homepageUrl, project.name + '.png')
             : null
         } */
-      />
+        />
+      )}
       {!!project.repositoryTopics.length && (
         <Card.Topics topics={project.repositoryTopics} />
       )}
