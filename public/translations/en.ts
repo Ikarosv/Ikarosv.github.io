@@ -11,7 +11,7 @@ const en = {
   contactMe: 'Contact me !!',
   quote: 'With great power comes great electricity bill',
   viewAll: 'View all ~~>',
-  skills: 'Skills',
+  skills: 'skills',
   languages: 'Languages',
   databases: 'Databases',
   other: 'Other',
@@ -29,6 +29,12 @@ const en = {
   listOfMyProjects: 'List of my projects',
   pinneds: 'pinneds',
   allProjects: 'all_projects',
+  whoAmI: 'Who am I?',
+  myFunFacts: 'my_fun_facts',
+  iLikeWinterMoreThanSummer: 'I like winter more than summer',
+  iHaveADogNamedPrincesa: 'I have a dog named Princesa',
+  iAmVeryPerfectionist: 'I am very perfectionist (sometimes)',
+  myFavoriteSerieIsGreysAnatomy: "My favorite series is Grey's Anatomy",
 }
 
 export default en

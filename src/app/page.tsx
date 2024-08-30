@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-import Home from '@/components/Home'
+import Hero from '@/components/Home'
 import { cookies } from 'next/headers'
 import translations, { Lang } from '../../public/translations'
 import Image from 'next/image'
@@ -9,6 +9,7 @@ import Card from '@/components/Card'
 import Retangle from '@/components/Retangle'
 import DotGroup from '@/components/DotGroup'
 import ButtonLive from '@/components/Buttons/ButtonLive'
+import DisplayProjects from '@/components/DisplayProjects'
 
 const url = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'
 
@@ -37,7 +38,7 @@ export default async function Homee() {
   } = translations[lang]
   return (
     <main className="px-3 md:px-0">
-      <Home />
+      <Hero />
       <figure className="mt-28 mb-[8.56rem] border w-fit border-solid border-gray relative mx-auto -z-10 text-white">
         <Image
           src="/icons/quotes.svg"
@@ -75,20 +76,7 @@ export default async function Homee() {
           </Link>
         </div>
         <div className="flex flex-wrap gap-4 mt-12 justify-center">
-          {githubProjects.map((project) => (
-            <Card key={project.id}>
-              <Card.Image />
-              <Card.Topics topics={project.repositoryTopics} />
-              <Card.Details
-                title={project.name}
-                description={
-                  project.description || "I don't have a description"
-                }
-                projectUrl={project.url}
-                homepageUrl={project.homepageUrl}
-              />
-            </Card>
-          ))}
+          <DisplayProjects projects={githubProjects} />
         </div>
       </section>
       <section className="mt-[6.625rem]">

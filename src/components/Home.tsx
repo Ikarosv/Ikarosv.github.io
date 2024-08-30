@@ -4,7 +4,7 @@ import DotGroup from '@/components/DotGroup'
 import ButtonLive from '@/components/Buttons/ButtonLive'
 import getLanguage from '@/utils/getLanguage'
 
-export default function Home() {
+export default function Hero() {
   const lang = getLanguage()
   const { homeTitle, homeDescription, working, contactMe } = translations[lang]
   return (

@@ -11,12 +11,12 @@ const pt = {
   contactMe: 'Contate-me !!',
   quote: 'Com grande poder vem uma grande conta de eletricidade',
   viewAll: 'Ver todos ~~>',
-  skills: 'Habilidades',
+  skills: 'habilidades',
   languages: 'Linguagens',
   databases: 'Bancos de dados',
   other: 'Outros',
   tools: 'Ferramentas',
-  style: 'Estilo',
+  style: 'Estilização',
   aboutMeContent: `Olá,  sou um Desenvolvedor Web Full Stack, atualmente estou aprendendo Kotlin. Estou determinado a iniciar minha carreira profissional com uma imensa paixão por resolução de problemas e uma sede constante de aprendizado, o que me impulsiona a buscar novos conhecimentos e a evoluir continuamente.
   <br><br>
   Ao longo dos últimos dois anos, venho estudando programação, começando com Python. Com o tempo, expandi minha expertise para outras tecnologias relevantes na área de desenvolvimento web.`,
@@ -29,6 +29,12 @@ const pt = {
   listOfMyProjects: 'Lista de meus projetos',
   pinneds: 'pinados',
   allProjects: 'todos_os_projetos',
+  whoAmI: 'Quem sou eu?',
+  myFunFacts: 'curiosidades_sobre_mim',
+  iLikeWinterMoreThanSummer: 'Eu gosto mais do inverno do que do verão',
+  iHaveADogNamedPrincesa: 'Eu tenho uma cachorra chamada Princesa',
+  iAmVeryPerfectionist: 'Eu sou muito perfeccionista (as vezes)',
+  myFavoriteSerieIsGreysAnatomy: "Minha série favorita é Grey's Anatomy",
 }
 
 export default pt
