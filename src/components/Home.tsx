@@ -3,6 +3,7 @@ import Image from 'next/image'
 import DotGroup from '@/components/DotGroup'
 import ButtonLive from '@/components/Buttons/ButtonLive'
 import getLanguage from '@/utils/getLanguage'
+import Link from 'next/link'
 
 export default function Hero() {
   const lang = getLanguage()
@@ -15,7 +16,9 @@ export default function Hero() {
           dangerouslySetInnerHTML={{ __html: homeTitle }}
         />
         <p className="text-gray font-fira my-[1.5rem]">{homeDescription}</p>
-        <ButtonLive className="max-md:hidden">{contactMe}</ButtonLive>
+        <Link href="/contact">
+          <ButtonLive className="max-md:hidden">{contactMe}</ButtonLive>
+        </Link>
       </div>
       <div className="flex flex-col items-center">
         <div className="relative -z-10">
