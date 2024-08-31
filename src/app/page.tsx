@@ -60,7 +60,6 @@ export default async function Homee() {
         </figcaption>
         <Retangle position="top-0 -right-56" />
       </figure>
-      {/* <span className="w-[5.6875rem] h-[5.6875rem] hidden border border-solid border-gray absolute top-[115vh] -right-2 md:block" /> */}
       <section className="relative">
         <Retangle
           className="w-[9.6875rem] h-[9.6875rem]"
@@ -76,14 +75,16 @@ export default async function Homee() {
           </Link>
         </div>
         <div className="flex flex-wrap gap-4 mt-12 justify-center">
+          <div className="grid grid-rows-5 grid-cols-2 w-[1.575rem] gap-3 absolute top-8 -left-12">
+            <DotGroup width={2} />
+          </div>
           <DisplayProjects projects={githubProjects} />
         </div>
       </section>
-      <section className="mt-[6.625rem]">
+      <section className="mt-[6.625rem] relative">
         <div className="flex max-ssm:flex-wrap justify-between items-center w-full">
           <Title lineWidth="max-w-[15rem]">{skills}</Title>
         </div>
-
         <div className="flex flex-col justify-center md:justify-between md:flex-row">
           <div className="w-full md:w-[21.8125rem] h-[17.625rem] relative mt-3">
             <div className="grid grid-rows-5 grid-cols-5 w-[3.9375rem] gap-3 absolute top-[2.38rem]">
@@ -154,10 +155,17 @@ export default async function Homee() {
           </div>
         </div>
       </section>
-      <section className="mt-[6.625rem]">
+      <section className="mt-[6.625rem] relative">
         <div className="flex max-ssm:flex-wrap justify-between items-center w-full">
           <Title lineWidth="max-w-[20rem]">{aboutMe}</Title>
         </div>
+        <div className="grid grid-rows-5 grid-cols-5 w-[3.9375rem] gap-5 absolute top-60 -right-36">
+          <DotGroup />
+        </div>
+        <Retangle
+          position="top-20 -left-60"
+          className="w-[9.5rem] h-[9.5rem] block"
+        />
         <div className="flex flex-wrap md:flex-nowrap gap-2 items-center justify-between">
           <div className="flex flex-col gap-7">
             <p
@@ -178,9 +186,12 @@ export default async function Homee() {
         </div>
       </section>
 
-      <section className="mt-[6.625rem]">
+      <section className="mt-[6.625rem] relative">
         <div className="flex max-ssm:flex-wrap justify-between items-center w-full">
           <Title lineWidth="max-w-[8rem]">{contact}</Title>
+        </div>
+        <div className="grid grid-rows-5 grid-cols-5 w-[3.9375rem] gap-5 absolute top-20 -left-52">
+          <DotGroup />
         </div>
         <div className="flex flex-wrap md:flex-nowrap mt-10 gap-2 items-center justify-between">
           <p className="flex-shrink">{contactContent}</p>
