@@ -6,6 +6,7 @@ import Header from '@/components/Header/index'
 import { twMerge } from 'tailwind-merge'
 import Footer from '@/components/Footer'
 import Media from '@/components/Media'
+import getLanguage from '@/utils/getLanguage'
 
 const FiraCode = Fira_Code({
   subsets: ['latin'],
@@ -22,8 +23,9 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const lang = getLanguage()
   return (
-    <html lang="en">
+    <html lang={lang}>
       <body
         className={twMerge(
           `${FiraCode.variable} font-fira bg-dark bg-no-repeat text-gray overflow-x-hidden h-full min-h-screen`,
