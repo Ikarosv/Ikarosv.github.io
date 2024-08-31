@@ -31,8 +31,8 @@ export default function RootLayout({
           `${FiraCode.variable} font-fira bg-dark bg-no-repeat text-gray overflow-x-hidden h-full min-h-screen`,
         )}
       >
-        <main className="max-w-7xl mx-auto md:px-[10.69rem] w-screen overflow-x-hidden">
-          <section className="absolute top-0 left-4 gap-1 hidden flex-col items-center md:flex">
+        <main className="max-w-7xl mx-auto md:px-[10.69rem] w-screen relative">
+          <section className="fixed top-0 left-4 gap-1 hidden flex-col items-center md:flex z-50">
             <span className="w-px h-48 bg-gray block" />
             <div className="flex flex-col gap-1">
               <Media />
