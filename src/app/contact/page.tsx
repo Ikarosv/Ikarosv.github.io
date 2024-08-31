@@ -4,15 +4,20 @@ import translations from '../../../public/translations'
 import Image from 'next/image'
 import SendEmail from '@/components/SendEmail'
 import capitalizeFirstLetter from '@/utils/capitalizeFirstLetter'
+import { Metadata } from 'next'
 
-const lang = getLanguage()
-const { contact, talkToMe, contactContent, messageMe } = translations[lang]
+export async function generateMetadata(): Promise<Metadata> {
+  const lang = getLanguage()
+  const { contact } = translations[lang]
 
-export const metadata = {
-  title: `Ikaro Vieira | ${capitalizeFirstLetter(contact)}`,
+  return {
+    title: `Ikaro Vieira | ${capitalizeFirstLetter(contact)}`,
+  }
 }
 
 export default function Contact() {
+  const lang = getLanguage()
+  const { contact, talkToMe, contactContent, messageMe } = translations[lang]
   return (
     <section className="px-3 md:px-0">
       <h1 className="text-white font-bold text-[2rem]">

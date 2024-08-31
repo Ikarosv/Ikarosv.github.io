@@ -7,29 +7,35 @@ import Card from '@/components/Card'
 import Retangle from '@/components/Retangle'
 import Title from '@/components/Title'
 import capitalizeFirstLetter from '@/utils/capitalizeFirstLetter'
+import { Metadata } from 'next'
 
-const lang = getLanguage()
-const {
-  aboutMe,
-  whoAmI,
-  aboutMeContent,
-  skills,
-  languages,
-  databases,
-  other,
-  tools,
-  style,
-  myFunFacts,
-  iLikeWinterMoreThanSummer,
-  iHaveADogNamedPrincesa,
-  iAmVeryPerfectionist,
-  myFavoriteSerieIsGreysAnatomy,
-} = translations[lang]
-export const metadata = {
-  title: `Ikaro Vieira | ${capitalizeFirstLetter(aboutMe)}`,
+export async function generateMetadata(): Promise<Metadata> {
+  const lang = getLanguage()
+  const { aboutMe } = translations[lang]
+
+  return {
+    title: `Ikaro Vieira | ${capitalizeFirstLetter(aboutMe)}`,
+  }
 }
 
 export default function About() {
+  const lang = getLanguage()
+  const {
+    aboutMe,
+    whoAmI,
+    aboutMeContent,
+    skills,
+    languages,
+    databases,
+    other,
+    tools,
+    style,
+    myFunFacts,
+    iLikeWinterMoreThanSummer,
+    iHaveADogNamedPrincesa,
+    iAmVeryPerfectionist,
+    myFavoriteSerieIsGreysAnatomy,
+  } = translations[lang]
   return (
     <section className="px-3 md:px-0">
       <h1 className="text-white font-bold text-[2rem]">
