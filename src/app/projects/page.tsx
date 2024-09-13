@@ -68,16 +68,16 @@ export default async function Project() {
           className="w-[9.6875rem] h-[9.6875rem]"
           position="bottom-1/4 -right-56"
         />
-        <div className="grid grid-rows-5 grid-cols-5 w-[3.9375rem] gap-3 absolute top-96 -left-44">
+        <div className="hidden md:grid grid-rows-5 grid-cols-5 w-[3.9375rem] gap-3 absolute top-96 -left-44">
           <DotGroup />
         </div>
-        <div className="grid grid-rows-5 grid-cols-5 w-[3.9375rem] gap-3 absolute top-1/3 -right-40">
+        <div className="hidden md:grid grid-rows-5 grid-cols-5 w-[3.9375rem] gap-3 absolute top-1/3 -right-40">
           <DotGroup />
         </div>
-        <div className="grid grid-rows-5 grid-cols-5 w-[3.9375rem] gap-3 absolute bottom-0 -left-36">
+        <div className="hidden md:grid grid-rows-5 grid-cols-5 w-[3.9375rem] gap-3 absolute bottom-0 -left-36">
           <DotGroup />
         </div>
-        <div className="grid grid-rows-5 grid-cols-5 w-[3.9375rem] gap-3 absolute bottom-1/2 -left-36">
+        <div className="hidden md:grid grid-rows-5 grid-cols-5 w-[3.9375rem] gap-3 absolute bottom-1/2 -left-36">
           <DotGroup />
         </div>
         <Title lineWidth="max-w-[8rem]">{allProjects}</Title>

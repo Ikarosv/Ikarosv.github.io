@@ -159,7 +159,7 @@ export default async function Homee() {
         <div className="flex max-ssm:flex-wrap justify-between items-center w-full">
           <Title lineWidth="max-w-[20rem]">{aboutMe}</Title>
         </div>
-        <div className="grid grid-rows-5 grid-cols-5 w-[3.9375rem] gap-5 absolute top-60 -right-36">
+        <div className="hidden grid-rows-5 grid-cols-5 w-[3.9375rem] gap-5 absolute top-60 -right-36 md:grid">
           <DotGroup />
         </div>
         <Retangle
