@@ -4,9 +4,9 @@ const pt = {
   aboutMe: 'sobre_mim',
   contact: 'contato',
   homeTitle:
-    'Ikaro é um <span class="text-primary">desenvolvedor web full-stack</span>.',
+    'Sou um <span class="text-primary">desenvolvedor web full-stack</span>.',
   homeDescription:
-    'Ele ama aprender, resolver problemas e é apaixonado por tecnologia e criatividade.',
+    'Amo aprender, resolver problemas e sou apaixonado por tecnologia e criatividade.',
   working: 'Atualmente trabalhando em ',
   contactMe: 'Contate-me !!',
   quote: 'Com grande poder vem uma grande conta de eletricidade',
